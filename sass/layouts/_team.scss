@@ -1,0 +1,31 @@
+.team {
+    padding: 94px 0;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F4FA;
+}
+
+.team__title {
+    color: var(--section-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+
+}
+
+.team__list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.team__item {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+
+}
+
+@import "../components/team-card";

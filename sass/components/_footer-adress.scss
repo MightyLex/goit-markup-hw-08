@@ -1,0 +1,38 @@
+.footer-list {
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.footer-list-item {
+    margin-bottom: 9px;
+
+    &:last-child {
+    margin-bottom: 0;
+}
+}
+
+.footer-contact-info {
+    color: var(--footer-contact-color);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contact-info:hover,
+.footer-contact-info:focus {
+    color: var(--accent-color);
+    font-style: normal;
+}
+
+.footer-adress {
+    color: var(--secondary-color);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}

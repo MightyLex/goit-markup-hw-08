@@ -1,0 +1,39 @@
+.header-contact-list {
+    display: flex;
+}
+
+.header-contact-list-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+
+.header-contact-info {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.header-icon {
+    margin-right: 10px;
+    fill: var(--main-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact-info:hover,
+.header-contact-info:focus {
+    color: var(--accent-color);
+
+    &:hover .header-icon, &:focus .header-icon {
+    fill: var(--accent-color);
+}
+}
+

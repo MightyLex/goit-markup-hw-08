@@ -1,0 +1,11 @@
+.header {
+    padding: 24px 0;
+    border-bottom: 1px solid #ECECEC;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@import "../components/header-nav";
+@import "../components/header-contacts";

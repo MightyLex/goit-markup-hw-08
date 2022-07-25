@@ -1,0 +1,17 @@
+.footer {
+    padding: 60px 0;
+    border-bottom: 1px solid #ECECEC;
+    /* max-width: 1600px; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bgc-semiblack);
+}
+
+.footer-top-container {
+    display: flex;
+
+}
+
+@import "../components/footer-adress";
+@import "../components/footer-social";
+@import "../components/footer-subscribe-form";
