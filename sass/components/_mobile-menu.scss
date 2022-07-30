@@ -1,0 +1,159 @@
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 15px 0;
+    overflow: auto;
+    margin: 0 auto;
+    z-index: 999;
+
+    transition-property: all;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+    }
+    
+    &.is-hidden{
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    
+}
+
+.menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    fill: #212121;
+    background-color: #fff;
+    border-color: transparent;
+    margin-left: auto;
+    
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color)
+    }
+
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+
+.menu-container{
+    padding: 33px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
+
+    
+
+}
+
+
+.mob-nav {
+    margin-bottom: 50px;
+
+
+}
+
+
+.mob-nav__item {
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+
+.mob-nav__link {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.18px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+
+    @media screen and (min-width: 480px) {
+    font-size: 40px;
+    
+    }
+}
+
+.mob-contacts {
+    list-style: none;
+    margin-bottom: 64px;
+
+}
+.mob-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+
+.mob-contacts__link {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.18px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+    font-size: 34px;
+    
+    }
+}
+
+
+.mob-mail{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.18px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    @media screen and (min-width: 480px) {
+    font-size: 24px;
+    
+    }
+}
+
+
+.mob-social {
+    display: flex;
+    list-style: none;
+}
+.mob-social__item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2); 
+    margin-right: 10px;
+    
+
+}
+.mob-social__link {
+    width: 100%;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+    font-size: 18px;
+    
+    }
+}

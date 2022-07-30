@@ -1,5 +1,17 @@
+.footer-adress-container{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        min-width: 231px;
+        text-align: left;
+        
+    }
+}
+
 .footer-list {
-    height: 81px;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -16,6 +28,7 @@
 
 .footer-contact-info {
     color: var(--footer-contact-color);
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
@@ -32,6 +45,7 @@
 
 .footer-adress {
     color: var(--secondary-color);
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;

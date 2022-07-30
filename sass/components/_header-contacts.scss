@@ -1,10 +1,30 @@
 .header-contact-list {
+    
+    display: none;
+
+    @media screen and (min-width:768px) {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+
+    @media screen and (min-width:1200px) {
+
+        flex-direction: row;
+        
+
+    }
+
+
 }
 
 .header-contact-list-item:not(:first-child) {
-    margin-left: 50px;
+    @media screen and (min-width:1200px) {
+        margin-left: 50px;
+        
+    }
 }
+
 
 
 .header-contact-info {
