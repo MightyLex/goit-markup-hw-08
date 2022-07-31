@@ -5,43 +5,44 @@
 
 .portfolio-btns-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
+    flex-wrap: wrap;    
     justify-content: start;
+    max-width: 362px;
+    row-gap: 15px;
+    column-gap: 8px;
+    margin-bottom: 40px;
 
     @media screen and (min-width:768px) {
         margin-bottom: 30px;  
         justify-content: center;
+        max-width: 100%;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
         margin-bottom: 50px;        
     }
     
 }
 
-.portfolio-btns-list-item {
+// .portfolio-btns-list-item {
 
-    margin-left: 8px;
+// //     margin-left: 8px;
+// //     margin-bottom: 15px;
 
-    &:first-child {
-    margin-left: 0;
-    margin-bottom: 15px;
-}
-    &:nth-child(4) {
-        margin-left: 0;
-    }
-
-    @media screen and (min-width:768px) {
+// //     &:first-child {
+// //     margin-left: 0;
+    
+// // }
 
 
-        &:nth-child(4) {
-        margin-left: 8;
-    }
-    }
-}
-
+//     @media screen and (min-width:480px) {
+    
+    
+// }
+//     @media screen and (min-width:768px) {
+    
+// }
+// }
 .portfolio-bts {
     font-family: inherit;
     font-weight: 500;
@@ -104,17 +105,28 @@
 
     flex-basis: 100%;
     
-        
     @media screen and(min-width: 768px) {
-        flex-basis: calc((100% - 30px) / 2 );
-        
+    flex-basis: calc((100% - 30px) / 2 );
+    
 
     }
 
     @media screen and(min-width: 1200px) {
-        flex-basis: calc((100% - 60px) / 3 );
+    flex-basis: calc((100% - 60px) / 3 );
 
 
+    }
+
+    &>a {
+        height: 100%;
+        
+        @media screen and(min-width:768px) and (max-width:1200px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+    }
     }
 
     transition-property: box-shadow;
@@ -133,7 +145,12 @@
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: transparent;
-    // height: 146px;
+    
+    @media screen and(min-width: 768px) and (max-width: 1200px) {
+    
+        flex-grow: 1;
+    }
+    
 
 }
 

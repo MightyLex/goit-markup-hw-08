@@ -72,7 +72,7 @@
     </svg> </button>
         <div class="menu-container">
         <ul class="mob-nav">
-          <li class="mob-nav__item list"><a href="./index.html" class="mob-nav__link" rel="noreferrer nofolower"> Студия </a> </li>
+          <li class="mob-nav__item list"><a href="./index.html" class="mob-nav__link curr" rel="noreferrer nofolower"> Студия </a> </li>
           <li class="mob-nav__item list"><a href="./portfolio.html" class="mob-nav__link" rel="noreferrer nofolower"> Портфолио </a> </li>
           <li class="mob-nav__item list"><a href="" class="mob-nav__link" rel="noreferrer nofolower"> Контакты </a> </li>
         </ul>
@@ -165,7 +165,13 @@
           <ul class="team__list list">
             <li class="team__item">
               <div class="team-card">
-                <img src="./images/igor.jpg" alt="Игорь Демьянченко" max-width="480" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images\team\desktop\img-4-desk_result.jpg 1x, images\team\desktop\img-4-desk@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="images\team\tablet\img-4-tab_result.jpg 1x, images\team\tablet\img-4-tab@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(max-width: 767px)" srcset="images\team\mobile\img-4-mob_result.jpg 1x, images\team\mobile\img-4-mob@2x_result.jpg 2x" type="image/jpg">
+                  <img src="./images/team/mobile/img-4-mob_result.jpg" alt="Игорь Демьянченко" max-width="480">
+                </picture>
+                <!-- <img src="./images/igor.jpg" alt="Игорь Демьянченко" max-width="480" /> -->
                 <div class="team-card__text">
                   <p class="team-card__title">Игорь Демьянченко</p>
                   <p class="team-card__prof">Product Designer</p>
@@ -205,7 +211,13 @@
 
             <li class="team__item">
               <div class="team-card">
-                <img src="./images/olga.jpg" alt="Ольга Репина" max-width="480" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images\team\desktop\img-3-desk_result.jpg 1x, images\team\desktop\img-3-desk@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="images\team\tablet\img-3-tab_result.jpg 1x, images\team\tablet\img-3-tab@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(max-width: 767px)" srcset="images\team\mobile\img-3-mob_result.jpg 1x, images\team\mobile\img-3-mob@2x_result.jpg 2x" type="image/jpg">
+                  <img src="./images/team/mobile/img-3-mob_result.jpg" alt="Ольга Репина" max-width="480">
+                </picture>
+                <!-- <img src="./images/olga.jpg" alt="Ольга Репина" width="480" /> -->
                 <div class="team-card__text">
                   <p class="team-card__title">Ольга Репина</p>
                   <p class="team-card__prof">Frontend Developer</p>
@@ -245,7 +257,13 @@
 
             <li class="team__item">
               <div class="team-card">
-                <img src="./images/nick.jpg" alt="Николай Тарасов" max-width="480" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images\team\desktop\img-2-desk_result.jpg 1x, images\team\desktop\img-2-desk@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="images\team\tablet\img-2-tab_result.jpg 1x, images\team\tablet\img-2-tab@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(max-width: 767px)" srcset="images\team\mobile\img-2-mob_result.jpg 1x, images\team\mobile\img-2-mob@2x_result.jpg 2x" type="image/jpg">
+                  <img src="./images/team/mobile/img-2-mob_result.jpg" alt="Николай Тарасов" max-width="480">
+                </picture>
+                <!-- <img src="./images/nick.jpg" alt="Николай Тарасов" width="480" /> -->
                 <div class="team-card__text">
                   <p class="team-card__title">Николай Тарасов</p>
                   <p class="team-card__prof">Marketing</p>
@@ -285,7 +303,13 @@
 
             <li class="team__item">
               <div class="team-card">
-                <img src="./images/michael.jpg" alt="Михаил Ермаков" max-width="480" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images\team\desktop\img-1-desk_result.jpg 1x, images\team\desktop\img-1-desk@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="images\team\tablet\img-1-tab_result.jpg 1x, images\team\tablet\img-1-tab@2x_result.jpg 2x" type="image/jpg">
+                  <source media="(max-width: 767px)" srcset="images\team\mobile\img-1-mob_result.jpg 1x, images\team\mobile\img-1-mob@2x_result.jpg 2x" type="image/jpg">
+                  <img src="./images/team/mobile/img-1-mob_result.jpg" alt="Михаил Ермаков" max-width="480">
+                </picture>
+                <!-- <img src="./images/michael.jpg" alt="Михаил Ермаков" width="480" /> -->
                 <div class="team-card__text">
                   <p class="team-card__title">Михаил Ермаков</p>
                   <p class="team-card__prof">UI Designer</p>
