@@ -1,5 +1,11 @@
 .portfolio {
-    padding: 94px 0;
+
+    padding: 60px 0;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+        
+    }
 }
 
 
@@ -24,25 +30,7 @@
     
 }
 
-// .portfolio-btns-list-item {
 
-// //     margin-left: 8px;
-// //     margin-bottom: 15px;
-
-// //     &:first-child {
-// //     margin-left: 0;
-    
-// // }
-
-
-//     @media screen and (min-width:480px) {
-    
-    
-// }
-//     @media screen and (min-width:768px) {
-    
-// }
-// }
 .portfolio-bts {
     font-family: inherit;
     font-weight: 500;
@@ -95,7 +83,7 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
     
 
 }
@@ -104,6 +92,7 @@
 .portfolio-list-item {
 
     flex-basis: 100%;
+    
     
     @media screen and(min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2 );

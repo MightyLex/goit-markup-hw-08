@@ -368,8 +368,8 @@ body {
 .mob-nav__link {
   width: 100%;
   font-weight: 500;
-  font-size: 35px;
-  line-height: 1.18px;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -826,8 +826,13 @@ body {
 
 .clients {
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 
 .clients__title {
@@ -1218,7 +1223,12 @@ body {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .portfolio-btns-list {
@@ -1304,7 +1314,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
 }
 
 .portfolio-list-item {

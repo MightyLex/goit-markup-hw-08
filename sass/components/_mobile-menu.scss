@@ -75,6 +75,10 @@
 
 
 .mob-nav__item {
+    
+
+
+
     &:not(:last-child){
         margin-bottom: 32px;
     }
@@ -83,8 +87,8 @@
 .mob-nav__link {
     width: 100%;
     font-weight: 500;
-    font-size: 35px;
-    line-height: 1.18px;
+    font-size: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: #212121;
 
